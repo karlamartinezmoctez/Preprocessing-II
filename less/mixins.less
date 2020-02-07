@@ -1,1 +1,14 @@
 // Mixins in here
+//parametric mixin: button
+.btnMixin(@backgoundColor){
+    
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: @backgoundColor;
+    color:white;
+}
+
+//usage
+.btn{
+    .btnMixin(green);
+}
